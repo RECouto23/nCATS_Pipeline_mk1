@@ -13,7 +13,7 @@ name=${eachFile/.*}
 #echo $name
 echo 00_nCATS_Pipeline/$pod5_directory$name".pod5"
 cd ~
-nCATS_AssayDev/barcode04/dorado-0.7.3-linux-x64/bin/dorado basecaller $model -x cpu "00_nCATS_Pipeline/"$pod5_directory"/"$name".pod5">"00_nCATS_Pipeline/"$fastq_directory"SAM/"$name'.sam'
+~/00_nCATS_Pipeline/dorado-0.7.3-linux-x64/bin/dorado basecaller $model -x cpu "00_nCATS_Pipeline/"$pod5_directory$name".pod5">"00_nCATS_Pipeline/"$fastq_directory"SAM/"$name'.sam'
 done
 
 
